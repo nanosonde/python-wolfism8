@@ -6,7 +6,7 @@ PROJECT_DIR = Path(__file__).parent.resolve()
 README_FILE = PROJECT_DIR / "README.md"
 VERSION = "1.4.1"
 
-setuptools.setup(
+setup(
     name="python-wolfism8",
     version=VERSION,
     author="marcschmiedchen",
