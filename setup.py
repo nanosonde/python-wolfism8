@@ -6,7 +6,7 @@ with open("README.md") as fh:
 
 setuptools.setup(
     name="python-wolfism8",
-    version="1.4",
+    version="1.5",
     author="marcschmiedchen",
     author_email="marc.schmiedchen@protonmail.com",
     description="Get data from wolf heating system via ISM8",
