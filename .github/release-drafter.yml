@@ -5,5 +5,5 @@ categories:
       - "breaking change"
 template: |
   ## What’s Changed
-  $CHANGES
 
+  $CHANGES
