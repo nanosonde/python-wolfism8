@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 PROJECT_DIR = Path(__file__).parent.resolve()
 README_FILE = PROJECT_DIR / "README.md"
-VERSION = "1.4.1"
+VERSION = "1.4.0"
 
 setup(
     name="python-wolfism8",
