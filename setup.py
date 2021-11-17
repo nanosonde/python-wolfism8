@@ -1,16 +1,18 @@
 """ setup for creating pypi package """
-import setuptools
+from pathlib import Path
+from setuptools import find_packages, setup
 
-with open("README.md") as fh:
-    long_description = fh.read()
+PROJECT_DIR = Path(__file__).parent.resolve()
+README_FILE = PROJECT_DIR / "README.md"
+VERSION = "1.4.1"
 
 setuptools.setup(
     name="python-wolfism8",
-    version="1.4",
+    version=VERSION,
     author="marcschmiedchen",
     author_email="marc.schmiedchen@protonmail.com",
     description="Get data from wolf heating system via ISM8",
-    long_description=long_description,
+    long_description=README_FILE.read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=["test.*", "test"]),
     python_requires=">=3.6",
@@ -21,6 +23,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers",   
+        "Intended Audience :: Developers",
     ],
 )
